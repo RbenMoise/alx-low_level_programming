@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print the size of variable
- * Return o
+ * Return o (succes)
  */
 int main(void)
 {
