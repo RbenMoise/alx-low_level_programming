@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - size is not guaranteur
  * Return o (succes)
  */
 int main(void)
