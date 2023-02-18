@@ -12,8 +12,8 @@ int main(void)
 	for (c = 'a'; c <= 'z'; c++)
         {
 		if (c != 'e' && c != 'q')
-			putch(c);
+			putchar(c);
 	}
-        putch ('\n');
+        putchar ('\n');
 	return (0);
 }
