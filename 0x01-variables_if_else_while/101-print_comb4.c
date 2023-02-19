@@ -9,7 +9,7 @@ int main(void)
 	int j;
 	int k;
 
-	for (i = 0; i <=7; i++)
+	for (i = 0; i <= 7; i++)
 	{
 		for (j = 2; j <= 8; j++)
 		{
@@ -17,9 +17,14 @@ int main(void)
 			{
 				if (i != j && j != k && i != k)
 				{
-					putchar('0' +i);
+					putchar('0' + i);
 					putchar(j + '0');
 					putchar(k + '0');
+					if (i <7)
+					{
+						putchar(',')'
+						putcha(' ');
+					}
 				}
 			}
 		}
