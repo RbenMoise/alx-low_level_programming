@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
  * main - entry point
- * return 0 success
+ * return: 0 success
  */
-int main()
+int main(void)
 {
 	  int i;
 	  char c;
@@ -13,7 +13,6 @@ int main()
 		  c = i + '0';
 		  putchar(c);
 	  }
-	  
 	  for (i = 0; i < 6; i++)
 	  {
 		  c = i + 'a';
