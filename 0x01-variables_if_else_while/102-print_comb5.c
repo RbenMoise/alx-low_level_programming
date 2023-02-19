@@ -19,6 +19,7 @@ int main(void)
 				int n2 = i % 10;
 				int n3 = j / 10;
 				int n4 = j % 10;
+
 				putchar(n1 + '0');
 				putchar(n2 + '0');
 				putchar(' ');
