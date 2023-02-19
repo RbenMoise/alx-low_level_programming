@@ -9,7 +9,7 @@ int main(void)
 	int i;
 	int j;
 
-	for (int i = 0; i < 100; i++)
+	for (i = 0; i < 100; i++)
 	{
 		for (j = i; j < 100; j++)
 		{
@@ -27,7 +27,7 @@ int main(void)
 				if (i < 99)
 				{
 					putchar(',');
-					putchar(' ';)
+					putchar(' ');
 				}
 			}
 		}
