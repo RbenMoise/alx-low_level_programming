@@ -1,4 +1,4 @@
-#include <mail.h>
+#include <main.h>
 /**
  * Main - Entry point
  * Return: 0 (success)
