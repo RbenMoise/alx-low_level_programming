@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * oid times_table - entry point
+ * times_table - entry point
  */
 
 void times_table(void)
 {
 	int i, j, k;
 
-	for (i = 0; i <=9; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		_putchar('0');
 
