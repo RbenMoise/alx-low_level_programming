@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - prints n to 98 counts
  * @n: input
