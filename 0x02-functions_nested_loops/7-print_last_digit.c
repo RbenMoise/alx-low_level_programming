@@ -4,7 +4,7 @@
  * Retun: value of the last digit
  * @n: the value to be checked
  */
-print_last_digit(int n)
+int print_last_digit(int n)
 {
 	int l = n % 10;
 
