@@ -3,7 +3,7 @@
  * oid times_table - entry point
  */
 
-oid times_table(void)
+void times_table(void)
 {
 	int i, j, k;
 
