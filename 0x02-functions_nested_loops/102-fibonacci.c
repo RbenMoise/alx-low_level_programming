@@ -19,9 +19,9 @@ int main(void)
 		n2 = sum;
 
 		if (c == 49)
-			printf("\m");
+			printf("\n");
 		else
-			printf(",")
+			printf(",");
 	}
-	return (0)
+	return (0);
 }
