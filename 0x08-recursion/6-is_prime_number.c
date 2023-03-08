@@ -17,7 +17,7 @@ int is_prime_number(int n)
  * Return: int
  */
 
-int check(int n, int i)
+int check(int a, int b)
 {
 	if (i == n)
 		return (1);
