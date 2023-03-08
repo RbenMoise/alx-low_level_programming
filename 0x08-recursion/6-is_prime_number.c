@@ -6,13 +6,13 @@
  * Return: int
  */
 
-int check(int a, int b)
+int check(int n, int b)
 {
-	if (i == n)
+	if (n == b)
 		return (1);
-	if (n % a == 0)
+	if (n % b == 0)
 		return (0);
-	return (check(n, a + 1));
+	return (check(n, b + 1));
 }
 /**
  * is_prime_number - prime numbers
@@ -23,6 +23,6 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 		return (0);
-	return check(n, 2);
+	return (check(n, 2));
 }
 
