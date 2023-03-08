@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * check - returns the squar root 
+ * check - returns the squar root
  * @a: the value
  * @b: value
  * Return: -1 if not natural
@@ -27,5 +27,5 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	return (check(1,n));
+	return (check(1, n));
 }
