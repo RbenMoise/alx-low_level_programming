@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * check - recursive
- * @i: current devisor
+ * @b: current devisor
  * @n: to be checked
  * Return: int
  */
