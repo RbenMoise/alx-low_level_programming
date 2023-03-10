@@ -2,7 +2,8 @@
 /**
  * main - entry point
  * @argc: count
- * @argv: names
+ * @argv: name
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
