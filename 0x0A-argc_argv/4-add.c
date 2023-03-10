@@ -3,7 +3,8 @@
 /**
  * main - entry point
  * @argc: count
- * @argv: strings
+ * @argv: string
+ * Return: 0
  */
 
 int main(int argc, char *argv[])

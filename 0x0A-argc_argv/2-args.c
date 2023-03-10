@@ -3,6 +3,7 @@
  * main - entry point
  * @argc: count
  * @argv: names
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
