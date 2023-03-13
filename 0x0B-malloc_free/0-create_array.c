@@ -4,7 +4,7 @@
  * create_array - craeates an array of chars
  * @size: the size of the array
  * @c: initial value
- * Return: a pointer to the arra
+ * Return: a pointer to the arr
  */
 char *create_array(unsigned int size, char c)
 {

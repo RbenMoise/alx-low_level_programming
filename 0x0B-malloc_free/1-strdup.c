@@ -4,13 +4,16 @@
 
 char *_strdup(char *str)
 {
+	size_t len;
+	char *new_str;
+
 	if (str == NULL)
 
 		return (NULL);
 
-	size_t len = strlen(str) + 1;
+	len = strlen(str) + 1;
 
-	char *new_str = (char *)malloc(len * sizeof(char));
+	new_str = (char *)malloc(len * sizeof(char));
 
 	if (new_str == NULL)
 
