@@ -1,6 +1,11 @@
 #include <stdlib.h>
 #include "main.h"
 #include <string.h>
+/**
+ * _strdup -return a pointer to a new allocation
+ * @str: string
+ * Return: a pointer
+ */
 
 char *_strdup(char *str)
 {
