@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -8,7 +9,7 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int j;
+	unsigned int k;
 	listint_t *current, *subsequent;
 
 	if (!head || !*head)
@@ -20,7 +21,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(current);
 		return (1);
 	}
-	for ( j = 0; j < (index - 1); j++)
+	for (k = 0; k < (index - 1); k++)
 	{
 		current = current->next;
 		if (current == NULL)
