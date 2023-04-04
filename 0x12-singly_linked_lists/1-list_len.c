@@ -1,19 +1,21 @@
-#include < stdlib.h >
+#include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
 /**
-* list_len - to check the code
-* @h: list name
-* Return: nodes.
-*/
+ * list_len - check
+ * @h: list
+ * Return: nodes.
+ */
 size_t list_len(const list_t *h)
 {
-	size_t node_count = 0;
+	int count = 0;
 
-	for (const list_t *current = head; current != NULL; current = current->next)
-node_count++;
-
-	return (node_count);
+	while (h)
+	{
+		count++;
+		h = h->next;
+	}
+	return (count);
 }
