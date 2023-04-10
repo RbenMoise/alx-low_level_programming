@@ -4,7 +4,7 @@
 /**
  * read_textfile - this will reads a text file and prints it to stdout.
  * @filename: this is the name of the file to be written
- * @letters: this is the number of letters to be read and to be printed 
+ * @letters: this is the number of letters to be read and to be printed
  *
  * Return: this is th eactual number of letters to be read and printed
  */
@@ -34,4 +34,4 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(opn);
 
 	return (wrt);
-}  
+} 

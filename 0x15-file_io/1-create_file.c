@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 /**
  * create_file -thhis creates the files
  * @text_content: this is the content to write in the file
