@@ -18,7 +18,7 @@ void check1(int argc)
 }
 
 /**
- * check2 - check if exist 
+ * check2 - check if exist
  * @check: this will checks if true of false
  * @file: file name
  * @fd_from: filedesc
@@ -75,8 +75,8 @@ void check4(int check, int fd)
 }
 /**
  * main - this transfers the content of the file to the other file
- * @argc: this rep the no of arg passed 
- * @argv: pointer array to the arguments
+ * @argc: this rep the no of arg passed
+ * @argv[]: pointer array to the arguments
  * Return: 0
  */
 int main(int argc, char *argv[])
@@ -107,4 +107,4 @@ int main(int argc, char *argv[])
 	check4(close_to, fd_to);
 	check4(close_from, fd_from);
 	return (0);
-} 
+}
