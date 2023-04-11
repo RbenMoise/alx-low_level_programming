@@ -1,32 +1,40 @@
 #include "main.h"
 
 /**
- * append_text_to_file - this will apend the text to the files
- * @filename: file 
- * @text_content: content fir the file to be appended
- * Return: 1 if it is success and -1 if it is not successfull
+ * _strlen - this function will help find the length of the string
+ * @str: this is the string pointer
+ * Return: this will give us the len of the string
  */
+size_t _strlen(char *str)
+{
+	size_t k;
 
+	for (k = 0; str[k]; k++)
+		;
+	return (k);
+}
+
+/**
+ * append_text_to_file - appends text
+ * @filename:  file name
+ * @text_content: content
+ * Return: 1 if it is  successfull and it will return  -1 if it failures
+ */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int opn, len, wrt;
+	/**p is the lenght to be checked*/
+	int j;
+	ssize_t p;
 
 	if (filename == NULL)
 		return (-1);
-
-	opn = open(filename, O_APPEND | O_WRONLY);
-	if (opn == -1)
+	j = open(filename, O_WRONLY | O_APPEND);
+	if (j == -1)
 		return (-1);
-	if (text_content == NULL)
-	{
-		close(opn);
-		return (1);
-	}
-	for (len = 0; text_content[len] != '\0'; len++)
-		;
-	wrt = write(opn, text_content, len);
-	if (wrt < 1)
+	if (text_content != NULL)
+		p = write(j, text_content, _strlen(text_content));
+	close(j);
+	if (len == -1)
 		return (-1);
-	close(fd);
 	return (1);
 }
