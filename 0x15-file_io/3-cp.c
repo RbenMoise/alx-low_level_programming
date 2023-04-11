@@ -13,7 +13,7 @@ void check1(int argc)
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(1);
+		exit(97);
 	}
 }
 
@@ -34,7 +34,7 @@ void check2(ssize_t check, char *file, int fd_from, int fd_to)
 			close(fd_from);
 		if (fd_to != -1)
 			close(fd_to);
-		exit(2);
+		exit(98);
 	}
 }
 
@@ -55,7 +55,7 @@ void check3(ssize_t check, char *file, int fd_from, int fd_to)
 			close(fd_from);
 		if (fd_to != -1)
 			close(fd_to);
-		exit(3);
+		exit(99);
 	}
 }
 
@@ -70,7 +70,7 @@ void check4(int check, int fd)
 	if (check == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(4);
+		exit(100);
 	}
 }
 /**
