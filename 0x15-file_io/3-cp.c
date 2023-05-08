@@ -21,7 +21,7 @@ void check1(int argc)
  * check2 - check if exist
  * @check: this will checks if true of false
  * @file: file name
- * @fd_from: filedesc
+ * @fd_from filedesc
  * @fd_to: filedesc
  * Return:  nothisnd
  */

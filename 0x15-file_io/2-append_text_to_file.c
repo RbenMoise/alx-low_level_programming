@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - this function will help us to find the lenth of the string
+ * strlen - this function will help us to find the lenth of the string
  * @str: string pointer
  * Return: len
  */
@@ -33,7 +33,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content != NULL)
 		sz = write(po, text_content, _strlen(text_content));
 	close(po);
-	if (sz == -1)
+	if ( sz == -1)
 		return (-1);
 	return (1);
 }
