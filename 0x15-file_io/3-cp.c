@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
+**
  * check1 - no of arg
  * @argc: c
  *
@@ -10,7 +10,7 @@
  */
 void check1(int argc)
 {
-	if (argc != 3)
+	if (argc!= 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
@@ -34,12 +34,12 @@ void check2(ssize_t check, char *file, int fd_from, int fd_to)
 			close(fd_from);
 		if (fd_to != -1)
 			close(fd_to);
-		exit(98);
+		exit(98) ;
 	}
 }
 
 /**
- * check3 - checks for the created files
+ * chek3 - checks for the created files
  * @check: this will chec if true of false
  * @file: file_to name
  * @fd_from: file desc
@@ -70,10 +70,9 @@ void check4(int check, int fd)
 	if (check == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-		exit(100);
-	}
+		exit(100) ;	}
 }
-/**
+/
  * main - this transfers the content of the file to the other file
  * @argc: this rep the no of arg passed
  * @argv: pointer array to the arguments
@@ -105,6 +104,6 @@ int main(int argc, char *argv[])
 	close_to = close(fd_to);
 	close_from = close(fd_from);
 	check4(close_to, fd_to);
-	check4(close_from, fd_from);
+check4(close_from, fd_from);
 	return (0);
 }
